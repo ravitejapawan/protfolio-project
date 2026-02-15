@@ -10,7 +10,7 @@
 
 .centerContent--fullscreen {
   min-height: 100vh;
-  background: radial-gradient(circle at top, #f3f3f3, #e9e9e9 60%);
+  background: radial-gradient(circle at top, var(--surface-soft), var(--primary-color) 60%);
 }
 
 .fingerprint-loader-wrap {
@@ -70,7 +70,7 @@
   display: flex;
   align-items: baseline;
   gap: 0.5rem;
-  color: #6f7f90;
+  color: var(--gray-color);
 }
 
 .loader-brand__bracket {
@@ -82,7 +82,7 @@
 .loader-brand__name {
   font-size: 2.6rem;
   line-height: 1;
-  color: #0f0f12;
+  color: var(--black-color);
   font-family: "Brush Script MT", "Segoe Script", cursive;
 }
 
