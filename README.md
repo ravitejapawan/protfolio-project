@@ -1,6 +1,6 @@
 # Portfolio Project
 
-<<<<<<< HEAD
+
 Monorepo for a personal portfolio website.
 
 ## Projects
