@@ -1,0 +1,122 @@
+// toggle switch colors
+$toggleCheck: #2196f3;
+$toggleSwitchSliderBG: #ccc;
+
+// text colors
+$textColorDark: #222;
+
+// button color
+$buttonColor: #6c63ff; // Define your button color here
+
+// githubRepo specific colors
+$githubRepoCardLanguageColorBG: #0000ff;
+$githubRepoCardColor: rgb(88, 96, 105);
+$githubRepoCardRepoCardStatsColor: rgb(106, 115, 125);
+$githubRepoCardRepoNameColor: rgb(36, 41, 46);
+$githubProfileCardLocationTS: #ffebcd;
+$githubProfileCardBorder: #6c63ff;
+
+// light background colors
+$lightBackground1: #fff;
+$lightBackground2: rgb(255, 255, 255);
+$lightBackground3: #f5f2f4;
+$blogCardContainerColor: #586069;
+// dark background colors
+$darkBackground: #171c28;
+
+// light theme box shadows
+$lightBoxShadowDark: rgba(0, 0, 0, 0.2);
+$lightBoxShadow: rgba(0, 0, 0, 0.1);
+$lightBoxShadowDarker: rgba(0, 0, 0, 0.3);
+$darkBoxShadow2: #edeaff; // light lavender, contrasts with $buttonColor
+// dark theme box shadows
+$darkBoxShadow: #d9dbdf;
+$darkBoxShadow2: #ffffff;
+
+// linear gradients
+$experienceCardBlurredDivLG: linear-gradient(
+  rgba(0, 0, 0, 0.4),
+  rgba(0, 0, 0, 0.2)
+);
+$experienceCardBannerLG: linear-gradient(
+  rgba(0, 0, 0, 0.7),
+  rgba(0, 0, 0, 0.5)
+);
+
+// borders
+$progressBarBackground: rgb(243, 239, 239);
+$lightBorder1: rgba(211, 211, 211, 0.397);
+$educationCardBorder: #a9a7f9;
+
+// hovers
+$achievementCertificateCardHoverDark: rgba(255, 255, 255, 0.2);
+$blogCardHoverSmallColor: rgba(255, 255, 255, 0.8);
+$headerHoverBG: #f4f4f4;
+$contactDetailHoverTS: #b5b5b5;
+
+// misc backgrounds
+$progressBarSpanBG: #aaa5ff;
+$iconBackground: #333;
+$appHeaderBG: #282c34;
+
+// misc colors
+$skillsColor: #645beb;
+$appLink: #09d3ac;
+
+// social media icons
+$faceBook: #3b5998;
+$linkedin: #0e76a8;
+$github: #333;
+$gitlab: #fca326;
+$google: #ea4335;
+$twitter: #1da1f2;
+$medium: #000;
+$stackoverflow: #f48024;
+$instagram: #c13584;
+$kaggle: #20beff;
+
+.main-button {
+  background-color: $buttonColor;
+  border: solid 1px $buttonColor;
+  color: $textColorDark;
+  font-weight: 700;
+  width: max-content;
+  padding: 13px 22px;
+  margin-right: 50px;
+  text-transform: uppercase;
+  border-radius: 6px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  margin-top: 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out 0s;
+}
+.main-button:hover {
+  background-color: $darkBoxShadow2;
+  color: $buttonColor;
+  transition: all 0.3s ease 0s;
+  transform: translateY(-3px);
+}
+.project-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.project-button > .main-button {
+  margin-right: 0;
+}
+/* Media Query */
+@media (max-width: 768px) {
+  .main-button {
+    font-size: 0.938rem;
+    padding: 12px 18px;
+    margin-right: 0px;
+  }
+}
+@media (max-width: 320px) {
+  .main-button {
+    font-size: 0.75rem;
+  }
+}

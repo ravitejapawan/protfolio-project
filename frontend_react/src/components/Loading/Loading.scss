@@ -1,0 +1,145 @@
+@import "../../../_globalColor";
+
+.centerContent {
+  width: 100%;
+  min-height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.centerContent--fullscreen {
+  min-height: 100vh;
+  background: radial-gradient(circle at top, #f3f3f3, #e9e9e9 60%);
+}
+
+.fingerprint-loader-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.fingerprint-loader {
+  width: 400px;
+  height: 400px;
+  transform-origin: center;
+  animation: fp-loader-rotate 2.2s linear infinite;
+}
+
+.fp-ring {
+  fill: none;
+  stroke-linecap: round;
+  transform-origin: 110px 110px;
+}
+
+.fp-ring--outer {
+  stroke: #7448f5;
+  stroke-width: 12;
+  stroke-dasharray: 430 130;
+  stroke-dashoffset: 35;
+  animation: fp-ring-dash-outer 2.2s ease-in-out infinite;
+}
+
+.fp-ring--mid-1 {
+  stroke: #6127de;
+  stroke-width: 12;
+  stroke-dasharray: 220 140;
+  stroke-dashoffset: 80;
+  animation: fp-ring-dash-mid 2s ease-in-out infinite;
+}
+
+.fp-ring--mid-2 {
+  stroke: #4d18b9;
+  stroke-width: 11;
+  stroke-dasharray: 120 110;
+  stroke-dashoffset: 55;
+  animation: fp-ring-dash-mid 1.8s ease-in-out infinite reverse;
+}
+
+.fp-ring--inner {
+  stroke: #3f1496;
+  stroke-width: 10;
+  stroke-dasharray: 62 64;
+  stroke-dashoffset: 44;
+  animation: fp-ring-dash-inner 1.6s ease-in-out infinite;
+}
+
+.loader-brand {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  color: #6f7f90;
+}
+
+.loader-brand__bracket {
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 1;
+}
+
+.loader-brand__name {
+  font-size: 2.6rem;
+  line-height: 1;
+  color: #0f0f12;
+  font-family: "Brush Script MT", "Segoe Script", cursive;
+}
+
+@keyframes fp-loader-rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fp-ring-dash-outer {
+  0%,
+  100% {
+    stroke-dashoffset: 35;
+  }
+
+  50% {
+    stroke-dashoffset: -22;
+  }
+}
+
+@keyframes fp-ring-dash-mid {
+  0%,
+  100% {
+    stroke-dashoffset: 80;
+  }
+
+  50% {
+    stroke-dashoffset: 40;
+  }
+}
+
+@keyframes fp-ring-dash-inner {
+  0%,
+  100% {
+    stroke-dashoffset: 44;
+  }
+
+  50% {
+    stroke-dashoffset: 20;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .fingerprint-loader {
+    width: 380px;
+    height: 380px;
+  }
+
+  .loader-brand__name {
+    font-size: 2rem;
+  }
+
+  .loader-brand__bracket {
+    font-size: 1.6rem;
+  }
+}

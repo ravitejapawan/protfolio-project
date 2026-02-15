@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
+
+:root {
+  --font-base: "DM Sans", sans-serif;
+
+  --primary-color: #edf2f8;
+  --secondary-color: #2f56d6;
+  --black-color: #0f172a;
+  --lightGray-color: #d8dee8;
+  --gray-color: #667085;
+  --brown-color: #5d4d66;
+  --white-color: #ffffff;
+  --surface-color: #ffffff;
+  --surface-soft: #f7f9fc;
+  --border-color: #e4e9f2;
+  --shadow-color: rgba(15, 23, 42, 0.1);
+  --overlay-color: rgba(4, 12, 28, 0.55);
+  --footer-bg: #1f2937;
+  --footer-text: #f8fafc;
+}
+
+[data-theme="dark"] {
+  --primary-color: #0a101b;
+  --secondary-color: #7da2ff;
+  --black-color: #eef4ff;
+  --lightGray-color: #2a3547;
+  --gray-color: #a5b2c7;
+  --brown-color: #d2c0de;
+  --white-color: #121a28;
+  --surface-color: #121a28;
+  --surface-soft: #1a2535;
+  --border-color: #2c3a50;
+  --shadow-color: rgba(0, 0, 0, 0.45);
+  --overlay-color: rgba(4, 10, 20, 0.7);
+  --footer-bg: #0d1422;
+  --footer-text: #dce7ff;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--primary-color);
+  color: var(--black-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+img {
+  pointer-events: none;
+}
