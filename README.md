@@ -29,5 +29,8 @@ Website is completely built using the React JS and Sanity knowledge. No need to 
 It is completely responsive works fine on most of the devices and highly interactive. Data can be changed using a Content Management Service(CMS), Sanity. Because of this data can be changed anytime even after deployment.
 
 <img width="1902" height="1030" alt="image" src="https://github.com/user-attachments/assets/0e09f56c-c1ad-4d46-a5c5-49341bc19b06" />
+<br/>
+<img width="1913" height="1017" alt="image" src="https://github.com/user-attachments/assets/31ffd142-b279-4a28-aef8-dcb3c2686584" />
+
 
 
